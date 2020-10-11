@@ -6,4 +6,3 @@ MarkupSafe==1.1.1
 Werkzeug==0.15.1
 numpy==1.18.5
 tensorflow==2.3.0
-gunicorn
