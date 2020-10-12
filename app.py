@@ -4,6 +4,7 @@ from tensorflow.keras.models import load_model
 import pickle
 from flask import request
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+import os
 
 
 
@@ -53,8 +54,8 @@ def predict():
         return render_template('predict.html', result=out, text = text)
 
 
-
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+   port = int(os.environ.get("PORT", 5000))
+   app.run(debug=True, port=port)
 
 
