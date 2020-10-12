@@ -5,7 +5,7 @@ import pickle
 from flask import request
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-import os
+
 
 app = Flask(__name__)
 
